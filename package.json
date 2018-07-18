@@ -1,0 +1,33 @@
+{
+  "name": "comm-central-xbl-bindings",
+  "version": "1.0.0",
+  "description": "Scripts for finding xbl files, bindings etc.",
+  "main": "script.js",
+  "scripts": {
+    "prestart": "npm run makeBashFileExecutable",
+    "start": "./searchXBLFiles && node script.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "makeBashFileExecutable": "chmod +x ./searchXBLFiles"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arshdkhn1/comm-central-xbl-bindings.git"
+  },
+  "keywords": [
+    "xbl",
+    "thunderbird",
+    "comm-central",
+    "xul"
+  ],
+  "author": "Arshad Khan <arshdkhn1@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arshdkhn1/comm-central-xbl-bindings/issues"
+  },
+  "homepage": "https://github.com/arshdkhn1/comm-central-xbl-bindings#readme",
+  "dependencies": {
+    "eyes": "^0.1.8",
+    "json2md": "^1.6.1",
+    "xml2js": "^0.4.19"
+  }
+}
