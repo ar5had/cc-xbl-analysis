@@ -23,7 +23,7 @@ const parseXmlFile = (path, i = '=>') =>
 
                 const bindingArray = result.BINDINGS.BINDING.map(e => (
                     {
-                        id: e['$'].ID,
+                        binding: e['$'].ID,
                         extends: e['$'].EXTENDS || 'does not extend any binding/element'
                     }
                 ))
@@ -48,20 +48,15 @@ fs.readFile(file, (err, content) => {
     Promise.all(xmlFilePromises)
         .then(data => {
             // log(data)
-            const mdFormatData = data.map(e => {
-                // const bindings = e.bindingArray.map(f => ({h3: f.id, });
-
-                return ([
-                    { h1: `${e.name}` },
-                    { h2: 'Bindings' },
-                    {
-                        table: {
-                            headers: ['id', 'extends'],
-                            rows: e.bindingArray
-                        }
+            let mdFormatData = data.map(e => ([
+                { h3: `${e.name}` },
+                {
+                    table: {
+                        headers: ['binding', 'extends'],
+                        rows: e.bindingArray
                     }
-                ]);
-            })
+                }
+            ]))
 
             const markdownFileContent = json2md(mdFormatData);
 

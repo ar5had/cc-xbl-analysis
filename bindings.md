@@ -1,24 +1,18 @@
-# lightning-widgets
+### lightning-widgets
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 lightning-notification-bar | xul:hbox
 
-# gdata-list-tree-bindings
+### gdata-list-tree-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 gdata-list-tree | chrome://calendar/content/widgets/calendar-list-tree.xml#calendar-list-tree
 
-# xulDatePicker
+### xulDatePicker
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 panellist | chrome://global/content/bindings/menulist.xml#menulist-editable
 datetextpicker | chrome://calendar/content/datetimepickers/datetimepickers.xml#datetimepicker-base
@@ -31,31 +25,25 @@ timepicker-grids | xul:box
 datetimepicker | chrome://calendar/content/datetimepickers/datetimepickers.xml#datetimepicker-base
 datetimepicker-base | chrome://global/content/bindings/general.xml#basecontrol
 
-# calendar-task-tree-bindings
+### calendar-task-tree-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-task-tree | does not extend any binding/element
 calendar-task-tree-todaypane | chrome://calendar/content/calendar-task-tree.xml#calendar-task-tree
 
-# calendar-specific-view-bindings
+### calendar-specific-view-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-day-view | chrome://calendar/content/calendar-multiday-view.xml#calendar-multiday-view
 calendar-week-view | chrome://calendar/content/calendar-multiday-view.xml#calendar-multiday-view
 calendar-multiweek-view | chrome://calendar/content/calendar-month-view.xml#calendar-month-base-view
 calendar-month-view | chrome://calendar/content/calendar-month-view.xml#calendar-month-base-view
 
-# calendar-multiday-view-bindings
+### calendar-multiday-view-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-time-bar | does not extend any binding/element
 calendar-event-gripbar | does not extend any binding/element
@@ -64,69 +52,55 @@ calendar-header-container | chrome://calendar/content/widgets/calendar-widgets.x
 calendar-event-box | chrome://calendar/content/calendar-view-core.xml#calendar-editable-item
 calendar-multiday-view | chrome://calendar/content/calendar-base-view.xml#calendar-base-view
 
-# calendar-daypicker.xml
+### calendar-daypicker.xml
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 daypicker | chrome://global/content/bindings/button.xml#button-base
 daypicker-weekday | xul:box
 daypicker-monthday | xul:box
 
-# calendar-month-view-bindings
+### calendar-month-view-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-month-day-box-item | chrome://calendar/content/calendar-view-core.xml#calendar-editable-item
 calendar-month-day-box | chrome://calendar/content/widgets/calendar-widgets.xml#dragndropContainer
 calendar-month-base-view | chrome://calendar/content/calendar-base-view.xml#calendar-base-view
 
-# calendar-menu-bindings
+### calendar-menu-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 task-menupopup | xul:menupopup
 task-progress-menupopup | chrome://calendar/content/calendar-menus.xml#task-menupopup
 task-priority-menupopup | chrome://calendar/content/calendar-menus.xml#task-menupopup
 
-# agenda-list-bindings
+### agenda-list-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 agenda-base-richlist-item | chrome://global/content/bindings/richlistbox.xml#richlistitem
 agenda-checkbox-richlist-item | chrome://global/content/bindings/richlistbox.xml#richlistitem
 agenda-allday-richlist-item | chrome://calendar/content/agenda-listbox.xml#agenda-base-richlist-item
 agenda-richlist-item | chrome://calendar/content/agenda-listbox.xml#agenda-base-richlist-item
 
-# calendar-event-dialog-attendees.xml
+### calendar-event-dialog-attendees.xml
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 attendees-list | does not extend any binding/element
 selection-bar | does not extend any binding/element
 
-# calendar-event-dialog-recurrence-preview.xml
+### calendar-event-dialog-recurrence-preview.xml
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 recurrence-preview | xul:box
 
-# calendar-event-dialog-freebusy.xml
+### calendar-event-dialog-freebusy.xml
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 scroll-container | xul:box
 freebusy-day | xul:box
@@ -134,56 +108,44 @@ freebusy-timebar | xul:box
 freebusy-row | xul:box
 freebusy-grid | does not extend any binding/element
 
-# calendar-invitations-list-bindings
+### calendar-invitations-list-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-invitations-richlistbox | chrome://global/content/bindings/richlistbox.xml#richlistbox
 calendar-invitations-richlistitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# calendar-core-view-bindings
+### calendar-core-view-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-editable-item | does not extend any binding/element
 calendar-category-box | does not extend any binding/element
 
-# calendar-item-bindings
+### calendar-item-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-caption | xul:hbox
 item-date-row | xul:row
 
-# calendar-subscriptions-list-bindings
+### calendar-subscriptions-list-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-subscriptions-richlistbox | chrome://global/content/bindings/richlistbox.xml#richlistbox
 calendar-subscriptions-richlistitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# calendar-alarms
+### calendar-alarms
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-alarm-widget | chrome://global/content/bindings/richlistbox.xml#richlistitem
 calendar-snooze-popup | does not extend any binding/element
 
-# calendar-widgets
+### calendar-widgets
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 panel-menulist | chrome://global/content/bindings/menulist.xml#menulist
 category-panel | chrome://global/content/bindings/popup.xml#panel
@@ -196,81 +158,63 @@ modebox | xul:box
 dragndropContainer | does not extend any binding/element
 view-tab | chrome://global/content/bindings/tabbox.xml#tab
 
-# xulMiniMonth
+### xulMiniMonth
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 minimonth-header | xul:box
 active-minimonth-header | chrome://calendar/content/widgets/minimonth.xml#minimonth-header
 minimonth | xul:box
 
-# calendar-list-tree-bindings
+### calendar-list-tree-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 full-calendar-list-tree | #calendar-list-tree
 calendar-list-tree | does not extend any binding/element
 
-# calendar-multiday-view-bindings
+### calendar-multiday-view-bindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 calendar-base-view | does not extend any binding/element
 calendar-day-label | xul:box
 
-# accountBindings
+### accountBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 account | chrome://global/content/bindings/richlistbox.xml#richlistitem
 buttons | xul:hbox
 nobuttons | xul:hbox
 
-# imTooltipBindings
+### imTooltipBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 tooltip | chrome://global/content/bindings/popup.xml#tooltip
 
-# browserBindings
+### browserBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 browser | does not extend any binding/element
 
-# preferencesBindings
+### preferencesBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 preftab | chrome://messenger/content/preferences/preferences.xml#prefwindow
 
-# handlerBindings
+### handlerBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 handler | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# activityBindings
+### activityBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 activity-group | chrome://global/content/bindings/richlistbox.xml#richlistitem
 activity-base | chrome://global/content/bindings/richlistbox.xml#richlistitem
@@ -278,77 +222,59 @@ activity-process | chrome://messenger/content/activity.xml#activity-base
 activity-event | chrome://messenger/content/activity.xml#activity-base
 activity-warning | chrome://messenger/content/activity.xml#activity-base
 
-# contactBindings
+### contactBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 contact | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# convBindings
+### convBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 conv | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# conversationBindings
+### conversationBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 conversation | does not extend any binding/element
 conv-info-large | chrome://messenger/content/toolbar.xml#toolbar
 
-# badgebuttonBindings
+### badgebuttonBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 badgebutton | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 
-# groupBindings
+### groupBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 group | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# downloadBindings
+### downloadBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 download | chrome://global/content/bindings/richlistbox.xml#richlistitem
 
-# SearchBindings
+### SearchBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 glodaSearch | chrome://global/content/bindings/autocomplete.xml#autocomplete
 searchBarDropMarker | does not extend any binding/element
 
-# threadPaneColumnPickerBindings
+### threadPaneColumnPickerBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 threadPaneColumnPicker | chrome://global/content/bindings/tree.xml#tree-base
 
-# glodaFacetBindings
+### glodaFacetBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 query-explanation | does not extend any binding/element
 facets | does not extend any binding/element
@@ -361,11 +287,9 @@ facet-date | does not extend any binding/element
 results-message | does not extend any binding/element
 result-message | does not extend any binding/element
 
-# mailBindings
+### mailBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 dummy | xul:box
 attachmentlist-base | chrome://global/content/bindings/listbox.xml#listbox-base
@@ -398,11 +322,9 @@ appmenu-vertical | chrome://messenger/content/generalBindings.xml#menu-vertical
 menulist-description | chrome://global/content/bindings/menulist.xml#menulist
 menuitem-iconic-desc-noaccel | chrome://global/content/bindings/menu.xml#menuitem
 
-# tabmailBindings
+### tabmailBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 tabmail | does not extend any binding/element
 tabmail-tab | chrome://global/content/bindings/tabbox.xml#tab
@@ -413,44 +335,34 @@ tabmail-alltabs-popup | chrome://global/content/bindings/popup.xml#popup
 tabmail-close-tab-button | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 statuspanel | does not extend any binding/element
 
-# listboxBindings
+### listboxBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 listitem-iconic | chrome://global/content/bindings/listbox.xml#listitem
 listcell-iconic | chrome://global/content/bindings/listbox.xml#listcell
 
-# textboxBindings
+### textboxBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 textbox | xul:box
 
-# numberboxBindings
+### numberboxBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 numberbox | chrome://messenger/content/textbox.xml#textbox
 
-# spinbuttonsBindings
+### spinbuttonsBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 spinbuttons | chrome://global/content/bindings/general.xml#basecontrol
 
-# timepickerBindings
+### timepickerBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 datetimepicker-base | chrome://global/content/bindings/general.xml#basecontrol
 timepicker | chrome://communicator/content/bindings/datetimepicker.xml#datetimepicker-base
@@ -458,11 +370,9 @@ datepicker | chrome://communicator/content/bindings/datetimepicker.xml#datetimep
 datepicker-grid | chrome://communicator/content/bindings/datetimepicker.xml#datepicker
 datepicker-popup | chrome://communicator/content/bindings/datetimepicker.xml#datepicker
 
-# toolbarBindings
+### toolbarBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 toolbar-base | does not extend any binding/element
 toolbox | chrome://communicator/content/bindings/toolbar.xml#toolbar-base
@@ -476,22 +386,18 @@ toolbarpaletteitem-palette | chrome://communicator/content/bindings/toolbar.xml#
 toolbarpaletteitem-palette-wrapping-label | chrome://communicator/content/bindings/toolbar.xml#toolbarpaletteitem
 menu-button | chrome://global/content/bindings/button.xml#menu-button-base
 
-# generalBindings
+### generalBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 statusbar | does not extend any binding/element
 statusbarpanel | does not extend any binding/element
 dialogheader | does not extend any binding/element
 menu-vertical | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 
-# preferencesBindings
+### preferencesBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 preferences | does not extend any binding/element
 preference | does not extend any binding/element
@@ -499,28 +405,22 @@ prefwindow | chrome://global/content/bindings/dialog.xml#dialog
 prefpane | does not extend any binding/element
 panebutton | chrome://global/content/bindings/radio.xml#radio
 
-# menulistCompactBindings
+### menulistCompactBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 menulist-compact | chrome://global/content/bindings/menulist.xml#menulist
 
-# addrbookBindings
+### addrbookBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 addrbooks-menupopup | chrome://global/content/bindings/popup.xml#popup
 map-list | chrome://global/content/bindings/popup.xml#popup
 
-# autocompleteBindings
+### autocompleteBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 glodacomplete-rich-result-popup | chrome://global/content/bindings/autocomplete.xml#autocomplete-rich-result-popup
 glodacomplete-base-richlistitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
@@ -531,27 +431,21 @@ gloda-single-identity-item | chrome://gloda/content/glodacomplete.xml#glodacompl
 gloda-contact-chunk | chrome://gloda/content/glodacomplete.xml#glodacomplete-base-richlistitem
 gloda-multi-item | chrome://gloda/content/glodacomplete.xml#glodacomplete-base-richlistitem
 
-# charsetListBinding
+### charsetListBinding
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 charsetpicker | chrome://global/content/bindings/menulist.xml#menulist
 
-# mailFolderBindings
+### mailFolderBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 folder-menupopup | chrome://global/content/bindings/popup.xml#popup
 
-# filterBindings
+### filterBindings
 
-## Bindings
-
-id | extends
+binding | extends
 --- | ---
 ruleactiontype-menulist | does not extend any binding/element
 listitem | does not extend any binding/element
