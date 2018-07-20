@@ -5,7 +5,7 @@
   "main": "nodeScript.js",
   "scripts": {
     "prestart": "npm run makeBashFileExecutable",
-    "start": "./searchXBLFiles && node nodeScript.js",
+    "start": "./searchXBLFiles && node nodeScript.js && http-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "makeBashFileExecutable": "chmod +x ./searchXBLFiles"
   },
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/arshdkhn1/comm-central-xbl-bindings#readme",
   "dependencies": {
     "eyes": "^0.1.8",
+    "http-server": "^0.11.1",
     "json2md": "^1.6.1",
     "xml2js": "^0.4.19"
   }

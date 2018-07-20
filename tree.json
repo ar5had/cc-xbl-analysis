@@ -47,10 +47,10 @@
           "name": "daypicker-monthday"
         },
         {
-          "name": "timepicker-grids"
+          "name": "recurrence-preview"
         },
         {
-          "name": "recurrence-preview"
+          "name": "timepicker-grids"
         },
         {
           "name": "modebox",
@@ -62,18 +62,6 @@
               "name": "modehbox"
             }
           ]
-        },
-        {
-          "name": "scroll-container"
-        },
-        {
-          "name": "freebusy-day"
-        },
-        {
-          "name": "freebusy-timebar"
-        },
-        {
-          "name": "freebusy-row"
         },
         {
           "name": "calendar-day-label"
@@ -90,6 +78,14 @@
           "name": "minimonth"
         },
         {
+          "name": "textbox",
+          "children": [
+            {
+              "name": "numberbox"
+            }
+          ]
+        },
+        {
           "name": "dummy"
         },
         {
@@ -104,10 +100,63 @@
           ]
         },
         {
-          "name": "textbox",
+          "name": "scroll-container"
+        },
+        {
+          "name": "freebusy-day"
+        },
+        {
+          "name": "freebusy-timebar"
+        },
+        {
+          "name": "freebusy-row"
+        }
+      ]
+    },
+    {
+      "name": "calendar-editable-item",
+      "children": [
+        {
+          "name": "calendar-month-day-box-item"
+        },
+        {
+          "name": "calendar-event-box"
+        }
+      ]
+    },
+    {
+      "name": "dragndropContainer",
+      "children": [
+        {
+          "name": "calendar-month-day-box"
+        },
+        {
+          "name": "calendar-header-container"
+        }
+      ]
+    },
+    {
+      "name": "calendar-base-view",
+      "children": [
+        {
+          "name": "calendar-month-base-view",
           "children": [
             {
-              "name": "numberbox"
+              "name": "calendar-multiweek-view"
+            },
+            {
+              "name": "calendar-month-view"
+            }
+          ]
+        },
+        {
+          "name": "calendar-multiday-view",
+          "children": [
+            {
+              "name": "calendar-day-view"
+            },
+            {
+              "name": "calendar-week-view"
             }
           ]
         }
@@ -126,6 +175,14 @@
               "name": "task-priority-menupopup"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "calendar-task-tree",
+      "children": [
+        {
+          "name": "calendar-task-tree-todaypane"
         }
       ]
     },
@@ -165,15 +222,6 @@
           "name": "contact"
         },
         {
-          "name": "conv"
-        },
-        {
-          "name": "group"
-        },
-        {
-          "name": "download"
-        },
-        {
           "name": "activity-group"
         },
         {
@@ -189,6 +237,15 @@
               "name": "activity-warning"
             }
           ]
+        },
+        {
+          "name": "conv"
+        },
+        {
+          "name": "group"
+        },
+        {
+          "name": "download"
         },
         {
           "name": "glodacomplete-base-richlistitem",
@@ -216,14 +273,6 @@
       ]
     },
     {
-      "name": "calendar-task-tree",
-      "children": [
-        {
-          "name": "calendar-task-tree-todaypane"
-        }
-      ]
-    },
-    {
       "name": "calendar-time-bar"
     },
     {
@@ -231,55 +280,6 @@
     },
     {
       "name": "calendar-event-column"
-    },
-    {
-      "name": "dragndropContainer",
-      "children": [
-        {
-          "name": "calendar-header-container"
-        },
-        {
-          "name": "calendar-month-day-box"
-        }
-      ]
-    },
-    {
-      "name": "calendar-editable-item",
-      "children": [
-        {
-          "name": "calendar-event-box"
-        },
-        {
-          "name": "calendar-month-day-box-item"
-        }
-      ]
-    },
-    {
-      "name": "calendar-base-view",
-      "children": [
-        {
-          "name": "calendar-multiday-view",
-          "children": [
-            {
-              "name": "calendar-day-view"
-            },
-            {
-              "name": "calendar-week-view"
-            }
-          ]
-        },
-        {
-          "name": "calendar-month-base-view",
-          "children": [
-            {
-              "name": "calendar-multiweek-view"
-            },
-            {
-              "name": "calendar-month-view"
-            }
-          ]
-        }
-      ]
     },
     {
       "name": "menulist-editable",
@@ -343,9 +343,6 @@
       ]
     },
     {
-      "name": "calendar-category-box"
-    },
-    {
       "name": "xul:row",
       "children": [
         {
@@ -354,13 +351,10 @@
       ]
     },
     {
+      "name": "calendar-category-box"
+    },
+    {
       "name": "calendar-snooze-popup"
-    },
-    {
-      "name": "attendees-list"
-    },
-    {
-      "name": "selection-bar"
     },
     {
       "name": "menulist",
@@ -434,7 +428,10 @@
       ]
     },
     {
-      "name": "freebusy-grid"
+      "name": "attendees-list"
+    },
+    {
+      "name": "selection-bar"
     },
     {
       "name": "autocomplete",
@@ -457,9 +454,6 @@
     },
     {
       "name": "browser"
-    },
-    {
-      "name": "conversation"
     },
     {
       "name": "query-explanation"
@@ -516,6 +510,9 @@
           "name": "listcell-iconic"
         }
       ]
+    },
+    {
+      "name": "conversation"
     },
     {
       "name": "listbox-base",
@@ -578,13 +575,13 @@
           "name": "popup-base"
         },
         {
-          "name": "tabmail-alltabs-popup"
-        },
-        {
           "name": "addrbooks-menupopup"
         },
         {
           "name": "map-list"
+        },
+        {
+          "name": "tabmail-alltabs-popup"
         },
         {
           "name": "folder-menupopup"
@@ -621,6 +618,15 @@
           "name": "menuitem-iconic-desc-noaccel"
         }
       ]
+    },
+    {
+      "name": "statusbar"
+    },
+    {
+      "name": "statusbarpanel"
+    },
+    {
+      "name": "dialogheader"
     },
     {
       "name": "toolbar-base",
@@ -670,13 +676,12 @@
       ]
     },
     {
-      "name": "statusbar"
-    },
-    {
-      "name": "statusbarpanel"
-    },
-    {
-      "name": "dialogheader"
+      "name": "autocomplete-rich-result-popup",
+      "children": [
+        {
+          "name": "glodacomplete-rich-result-popup"
+        }
+      ]
     },
     {
       "name": "tabmail"
@@ -707,14 +712,6 @@
     },
     {
       "name": "statuspanel"
-    },
-    {
-      "name": "autocomplete-rich-result-popup",
-      "children": [
-        {
-          "name": "glodacomplete-rich-result-popup"
-        }
-      ]
     },
     {
       "name": "ruleactiontype-menulist"
@@ -771,6 +768,9 @@
           "name": "panebutton"
         }
       ]
+    },
+    {
+      "name": "freebusy-grid"
     }
   ]
 }

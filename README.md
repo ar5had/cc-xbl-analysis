@@ -9,7 +9,8 @@ Only comm-central bindings are centre of focus so the files and bindings found w
 Steps:
 
 1. `npm install`
-2. `npm run start`
+2. `npm run start` and enter the path for your comm folder in comm-central repo
+3. open `localhost:8080` to see the visualized inheritance tree
 
 ## Files
 
