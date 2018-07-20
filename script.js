@@ -184,7 +184,7 @@ const draw = data => {
             update(root)
         }
 
-        // root.children.forEach(collapse);
+        root.children.forEach(collapse);
         update(root);
 
     });
