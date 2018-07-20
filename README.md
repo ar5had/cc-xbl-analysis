@@ -15,9 +15,13 @@ Steps:
 
 **files.txt:** contains the xbl files' path
 
-**script.js:** contains code for parsing xbl files and finding bindings etc.
+**nodeScript.js:** contains code for parsing xbl files and finding bindings etc.
 
 **searchXBLFiles:** script for populating files.txt
+
+**bindings.md:** markdown file having all the data related to binding present in a file and what they extends
+
+**InheritanceTree.js:** data structure for finding out the inheritance tree
 
 ## Supported os/systems
 

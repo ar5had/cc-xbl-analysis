@@ -2,10 +2,10 @@
   "name": "comm-central-xbl-bindings",
   "version": "1.0.0",
   "description": "Scripts for finding xbl files, bindings etc.",
-  "main": "script.js",
+  "main": "nodeScript.js",
   "scripts": {
     "prestart": "npm run makeBashFileExecutable",
-    "start": "./searchXBLFiles && node script.js",
+    "start": "./searchXBLFiles && node nodeScript.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "makeBashFileExecutable": "chmod +x ./searchXBLFiles"
   },
