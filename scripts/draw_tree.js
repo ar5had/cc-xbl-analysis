@@ -2,7 +2,7 @@ const draw = data => {
     const ww = window.innerWidth - 50
 
     let margin = { top: 40, right: 40, bottom: 40, left: 100 },
-        width = (ww > 1500 ? ww : 1500) - margin.left - margin.right,
+        width = (ww > 1300 ? ww : 1300) - margin.left - margin.right,
         height = 4000 - margin.top - margin.bottom
 
     let i = 0,
