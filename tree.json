@@ -2,17 +2,6 @@
   "name": "root",
   "children": [
     {
-      "name": "calendar-list-tree",
-      "children": [
-        {
-          "name": "gdata-list-tree"
-        },
-        {
-          "name": "full-calendar-list-tree"
-        }
-      ]
-    },
-    {
       "name": "xul:hbox",
       "children": [
         {
@@ -26,6 +15,17 @@
         },
         {
           "name": "nobuttons"
+        }
+      ]
+    },
+    {
+      "name": "calendar-list-tree",
+      "children": [
+        {
+          "name": "gdata-list-tree"
+        },
+        {
+          "name": "full-calendar-list-tree"
         }
       ]
     },
@@ -50,9 +50,6 @@
           "name": "recurrence-preview"
         },
         {
-          "name": "timepicker-grids"
-        },
-        {
           "name": "modebox",
           "children": [
             {
@@ -64,7 +61,16 @@
           ]
         },
         {
-          "name": "calendar-day-label"
+          "name": "scroll-container"
+        },
+        {
+          "name": "freebusy-day"
+        },
+        {
+          "name": "freebusy-timebar"
+        },
+        {
+          "name": "freebusy-row"
         },
         {
           "name": "minimonth-header",
@@ -78,12 +84,7 @@
           "name": "minimonth"
         },
         {
-          "name": "textbox",
-          "children": [
-            {
-              "name": "numberbox"
-            }
-          ]
+          "name": "calendar-day-label"
         },
         {
           "name": "dummy"
@@ -100,16 +101,15 @@
           ]
         },
         {
-          "name": "scroll-container"
+          "name": "textbox",
+          "children": [
+            {
+              "name": "numberbox"
+            }
+          ]
         },
         {
-          "name": "freebusy-day"
-        },
-        {
-          "name": "freebusy-timebar"
-        },
-        {
-          "name": "freebusy-row"
+          "name": "timepicker-grids"
         }
       ]
     },
@@ -179,14 +179,6 @@
       ]
     },
     {
-      "name": "calendar-task-tree",
-      "children": [
-        {
-          "name": "calendar-task-tree-todaypane"
-        }
-      ]
-    },
-    {
       "name": "richlistitem",
       "children": [
         {
@@ -222,6 +214,9 @@
           "name": "contact"
         },
         {
+          "name": "conv"
+        },
+        {
           "name": "activity-group"
         },
         {
@@ -237,9 +232,6 @@
               "name": "activity-warning"
             }
           ]
-        },
-        {
-          "name": "conv"
         },
         {
           "name": "group"
@@ -269,6 +261,14 @@
               "name": "gloda-multi-item"
             }
           ]
+        },
+        {
+          "name": "filterlistitem",
+          "children": [
+            {
+              "name": "ruleaction"
+            }
+          ]
         }
       ]
     },
@@ -282,65 +282,10 @@
       "name": "calendar-event-column"
     },
     {
-      "name": "menulist-editable",
-      "children": [
-        {
-          "name": "panellist"
-        }
-      ]
+      "name": "attendees-list"
     },
     {
-      "name": "timepicker-hour"
-    },
-    {
-      "name": "timepicker-minute"
-    },
-    {
-      "name": "basecontrol",
-      "children": [
-        {
-          "name": "datetimepicker-base",
-          "children": [
-            {
-              "name": "datetextpicker"
-            },
-            {
-              "name": "datepicker",
-              "children": [
-                {
-                  "name": "datepicker-forever"
-                },
-                {
-                  "name": "datepicker-grid"
-                },
-                {
-                  "name": "datepicker-popup"
-                }
-              ]
-            },
-            {
-              "name": "timepicker"
-            },
-            {
-              "name": "datetimepicker"
-            }
-          ]
-        },
-        {
-          "name": "spinbuttons"
-        }
-      ]
-    },
-    {
-      "name": "richlistbox",
-      "children": [
-        {
-          "name": "calendar-invitations-richlistbox"
-        },
-        {
-          "name": "calendar-subscriptions-richlistbox"
-        }
-      ]
+      "name": "selection-bar"
     },
     {
       "name": "xul:row",
@@ -352,6 +297,17 @@
     },
     {
       "name": "calendar-category-box"
+    },
+    {
+      "name": "richlistbox",
+      "children": [
+        {
+          "name": "calendar-invitations-richlistbox"
+        },
+        {
+          "name": "calendar-subscriptions-richlistbox"
+        }
+      ]
     },
     {
       "name": "calendar-snooze-popup"
@@ -396,15 +352,15 @@
           "name": "badgebutton"
         },
         {
+          "name": "tabmail-close-tab-button"
+        },
+        {
           "name": "menu-vertical",
           "children": [
             {
               "name": "appmenu-vertical"
             }
           ]
-        },
-        {
-          "name": "tabmail-close-tab-button"
         }
       ]
     },
@@ -428,10 +384,10 @@
       ]
     },
     {
-      "name": "attendees-list"
+      "name": "freebusy-grid"
     },
     {
-      "name": "selection-bar"
+      "name": "browser"
     },
     {
       "name": "autocomplete",
@@ -442,18 +398,12 @@
       ]
     },
     {
-      "name": "searchBarDropMarker"
-    },
-    {
       "name": "tree-base",
       "children": [
         {
           "name": "threadPaneColumnPicker"
         }
       ]
-    },
-    {
-      "name": "browser"
     },
     {
       "name": "query-explanation"
@@ -490,29 +440,71 @@
       "name": "result-message"
     },
     {
-      "name": "listitem",
-      "children": [
-        {
-          "name": "listitem-iconic"
-        },
-        {
-          "name": "attachmentitem"
-        },
-        {
-          "name": "ruleaction"
-        }
-      ]
-    },
-    {
-      "name": "listcell",
-      "children": [
-        {
-          "name": "listcell-iconic"
-        }
-      ]
-    },
-    {
       "name": "conversation"
+    },
+    {
+      "name": "toolbar",
+      "children": [
+        {
+          "name": "conv-info-large"
+        },
+        {
+          "name": "toolbar-menubar-autohide"
+        },
+        {
+          "name": "toolbar-drag"
+        }
+      ]
+    },
+    {
+      "name": "tabmail"
+    },
+    {
+      "name": "tabbox",
+      "children": [
+        {
+          "name": "tabmail-tabbox"
+        }
+      ]
+    },
+    {
+      "name": "arrowscrollbox-clicktoscroll",
+      "children": [
+        {
+          "name": "tabmail-arrowscrollbox"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "children": [
+        {
+          "name": "tabmail-tabs"
+        }
+      ]
+    },
+    {
+      "name": "popup",
+      "children": [
+        {
+          "name": "tabmail-alltabs-popup"
+        },
+        {
+          "name": "popup-base"
+        },
+        {
+          "name": "addrbooks-menupopup"
+        },
+        {
+          "name": "map-list"
+        },
+        {
+          "name": "folder-menupopup"
+        }
+      ]
+    },
+    {
+      "name": "statuspanel"
     },
     {
       "name": "listbox-base",
@@ -527,6 +519,14 @@
               "name": "attachmentlist-vertical"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "listitem",
+      "children": [
+        {
+          "name": "attachmentitem"
         }
       ]
     },
@@ -569,26 +569,6 @@
       "name": "searchvalue"
     },
     {
-      "name": "popup",
-      "children": [
-        {
-          "name": "popup-base"
-        },
-        {
-          "name": "addrbooks-menupopup"
-        },
-        {
-          "name": "map-list"
-        },
-        {
-          "name": "tabmail-alltabs-popup"
-        },
-        {
-          "name": "folder-menupopup"
-        }
-      ]
-    },
-    {
       "name": "tooltip",
       "children": [
         {
@@ -620,50 +600,66 @@
       ]
     },
     {
-      "name": "statusbar"
+      "name": "overlayTrigger"
     },
     {
-      "name": "statusbarpanel"
-    },
-    {
-      "name": "dialogheader"
-    },
-    {
-      "name": "toolbar-base",
+      "name": "addon-generic",
       "children": [
         {
-          "name": "toolbox"
+          "name": "thunderbird-addon-generic"
+        }
+      ]
+    },
+    {
+      "name": "basecontrol",
+      "children": [
+        {
+          "name": "spinbuttons"
         },
         {
-          "name": "toolbar",
+          "name": "datetimepicker-base",
           "children": [
             {
-              "name": "conv-info-large"
+              "name": "timepicker"
             },
             {
-              "name": "toolbar-menubar-autohide"
+              "name": "datepicker",
+              "children": [
+                {
+                  "name": "datepicker-grid"
+                },
+                {
+                  "name": "datepicker-popup"
+                },
+                {
+                  "name": "datepicker-forever"
+                }
+              ]
             },
             {
-              "name": "toolbar-drag"
+              "name": "datetextpicker"
+            },
+            {
+              "name": "datetimepicker"
             }
           ]
+        }
+      ]
+    },
+    {
+      "name": "toolbox"
+    },
+    {
+      "name": "menubar"
+    },
+    {
+      "name": "toolbarpaletteitem",
+      "children": [
+        {
+          "name": "toolbarpaletteitem-palette"
         },
         {
-          "name": "menubar"
-        },
-        {
-          "name": "toolbardecoration"
-        },
-        {
-          "name": "toolbarpaletteitem",
-          "children": [
-            {
-              "name": "toolbarpaletteitem-palette"
-            },
-            {
-              "name": "toolbarpaletteitem-palette-wrapping-label"
-            }
-          ]
+          "name": "toolbarpaletteitem-palette-wrapping-label"
         }
       ]
     },
@@ -676,68 +672,13 @@
       ]
     },
     {
-      "name": "autocomplete-rich-result-popup",
-      "children": [
-        {
-          "name": "glodacomplete-rich-result-popup"
-        }
-      ]
+      "name": "statusbar"
     },
     {
-      "name": "tabmail"
+      "name": "statusbarpanel"
     },
     {
-      "name": "tabbox",
-      "children": [
-        {
-          "name": "tabmail-tabbox"
-        }
-      ]
-    },
-    {
-      "name": "arrowscrollbox-clicktoscroll",
-      "children": [
-        {
-          "name": "tabmail-arrowscrollbox"
-        }
-      ]
-    },
-    {
-      "name": "tabs",
-      "children": [
-        {
-          "name": "tabmail-tabs"
-        }
-      ]
-    },
-    {
-      "name": "statuspanel"
-    },
-    {
-      "name": "ruleactiontype-menulist"
-    },
-    {
-      "name": "ruleactiontarget-base",
-      "children": [
-        {
-          "name": "ruleactiontarget-tag"
-        },
-        {
-          "name": "ruleactiontarget-priority"
-        },
-        {
-          "name": "ruleactiontarget-junkscore"
-        },
-        {
-          "name": "ruleactiontarget-replyto"
-        },
-        {
-          "name": "ruleactiontarget-forwardto"
-        },
-        {
-          "name": "ruleactiontarget-folder"
-        }
-      ]
+      "name": "dialogheader"
     },
     {
       "name": "preferences"
@@ -770,7 +711,60 @@
       ]
     },
     {
-      "name": "freebusy-grid"
+      "name": "autocomplete-rich-result-popup",
+      "children": [
+        {
+          "name": "glodacomplete-rich-result-popup"
+        }
+      ]
+    },
+    {
+      "name": "ruleactiontype-menulist"
+    },
+    {
+      "name": "ruleactiontarget-base",
+      "children": [
+        {
+          "name": "ruleactiontarget-tag"
+        },
+        {
+          "name": "ruleactiontarget-priority"
+        },
+        {
+          "name": "ruleactiontarget-junkscore"
+        },
+        {
+          "name": "ruleactiontarget-replyto"
+        },
+        {
+          "name": "ruleactiontarget-forwardto"
+        },
+        {
+          "name": "ruleactiontarget-folder"
+        }
+      ]
+    },
+    {
+      "name": "calendar-task-tree",
+      "children": [
+        {
+          "name": "calendar-task-tree-todaypane"
+        }
+      ]
+    },
+    {
+      "name": "menulist-editable",
+      "children": [
+        {
+          "name": "panellist"
+        }
+      ]
+    },
+    {
+      "name": "timepicker-hour"
+    },
+    {
+      "name": "timepicker-minute"
     }
   ]
 }

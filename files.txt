@@ -37,7 +37,8 @@
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/mail/base/content/glodaFacetBindings.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/mail/base/content/mailWidgets.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/mail/base/content/tabmail.xml
-/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/listbox.xml
+/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/mail/base/content/extensions.xml
+/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/content/overlayBindings.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/textbox.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/numberbox.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/spinbuttons.xml

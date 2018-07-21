@@ -264,7 +264,6 @@ download | chrome://global/content/bindings/richlistbox.xml#richlistitem
 binding | extends
 --- | ---
 glodaSearch | chrome://global/content/bindings/autocomplete.xml#autocomplete
-searchBarDropMarker | does not extend any binding/element
 
 ### threadPaneColumnPickerBindings
 
@@ -335,12 +334,17 @@ tabmail-alltabs-popup | chrome://global/content/bindings/popup.xml#popup
 tabmail-close-tab-button | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 statuspanel | does not extend any binding/element
 
-### listboxBindings
+### thunderbird-addon-bindings
 
 binding | extends
 --- | ---
-listitem-iconic | chrome://global/content/bindings/listbox.xml#listitem
-listcell-iconic | chrome://global/content/bindings/listbox.xml#listcell
+thunderbird-addon-generic | chrome://mozapps/content/extensions/extensions.xml#addon-generic
+
+### overlay-bindings
+
+binding | extends
+--- | ---
+overlayTrigger | does not extend any binding/element
 
 ### textboxBindings
 
@@ -374,14 +378,12 @@ datepicker-popup | chrome://communicator/content/bindings/datetimepicker.xml#dat
 
 binding | extends
 --- | ---
-toolbar-base | does not extend any binding/element
-toolbox | chrome://communicator/content/bindings/toolbar.xml#toolbar-base
-toolbar | chrome://communicator/content/bindings/toolbar.xml#toolbar-base
+toolbox | does not extend any binding/element
+toolbar | does not extend any binding/element
 toolbar-menubar-autohide | chrome://communicator/content/bindings/toolbar.xml#toolbar
 toolbar-drag | chrome://communicator/content/bindings/toolbar.xml#toolbar
-menubar | chrome://communicator/content/bindings/toolbar.xml#toolbar-base
-toolbardecoration | chrome://communicator/content/bindings/toolbar.xml#toolbar-base
-toolbarpaletteitem | chrome://communicator/content/bindings/toolbar.xml#toolbar-base
+menubar | does not extend any binding/element
+toolbarpaletteitem | does not extend any binding/element
 toolbarpaletteitem-palette | chrome://communicator/content/bindings/toolbar.xml#toolbarpaletteitem
 toolbarpaletteitem-palette-wrapping-label | chrome://communicator/content/bindings/toolbar.xml#toolbarpaletteitem
 menu-button | chrome://global/content/bindings/button.xml#menu-button-base
@@ -448,8 +450,8 @@ folder-menupopup | chrome://global/content/bindings/popup.xml#popup
 binding | extends
 --- | ---
 ruleactiontype-menulist | does not extend any binding/element
-listitem | does not extend any binding/element
-ruleaction | #listitem
+filterlistitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
+ruleaction | #filterlistitem
 ruleactiontarget-base | does not extend any binding/element
 ruleactiontarget-tag | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
 ruleactiontarget-priority | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
