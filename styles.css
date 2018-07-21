@@ -56,6 +56,7 @@ button {
     text-transform: uppercase;
     font-size: 11px;
     font-weight: bold;
+    background: #fff;
     border: solid 1px transparent;
     transition: all .2s;
     outline: none;
