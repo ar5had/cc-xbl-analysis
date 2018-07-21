@@ -6,4 +6,4 @@ read commCentralPath
 #commCentralPath="/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm"
 #echo $commCentralPath
 
-grep -r -l --exclude-dir={mozilla,suite,testing} --include=\*.xml "<bindings" $commCentralPath > ./files.txt
+grep -r -l --exclude-dir={mozilla,suite,testing} --include=\*.xml "<bindings" $commCentralPath > ./files/files.txt

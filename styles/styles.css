@@ -7,6 +7,7 @@ body,html {
 body {
     padding: 20px;
     background: #fdfdfd;
+    margin: 0
 }
 
 h3.center {
@@ -19,6 +20,9 @@ h3.center {
 
 .svgContainer {
     text-align: center;
+    background: #fafafa;
+    border: solid 1px #dedede;
+    overflow: scroll
 }
 
 .node {
@@ -45,8 +49,10 @@ h3.center {
     max-width: 600px;
     margin: auto;
     margin-bottom: 40px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-gap: 20px;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
 }
 
 button {

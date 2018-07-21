@@ -4,7 +4,7 @@ const json2md = require('json2md')
 const inheritanceTree = require('./InheritanceTree')
 const log = require('eyes').inspector({ maxLength: false })
 
-const file = './files.txt'
+const file = './files/files.txt'
 const tree = new inheritanceTree()
 
 const populateTree = (extendedBinding, childBinding) => {
@@ -32,7 +32,7 @@ const writeBindingsMdFile = data => {
 
     const markdownFileContent = json2md(mdFormatData);
 
-    fs.writeFile("./bindings.md", markdownFileContent, err => {
+    fs.writeFile("./files/bindings.md", markdownFileContent, err => {
         if (err)
             return console.error(err)
         log('Successfully written bindings data into bindings.md!')
@@ -63,7 +63,7 @@ const writeTreeJsonFile = tree => {
 
     const treeJson = JSON.stringify(convertTreeIntoD3Format(tree), null, 2)
 
-    fs.writeFile("./tree.json", treeJson, err => {
+    fs.writeFile("./files/tree.json", treeJson, err => {
         if (err)
             return console.error(err)
         log('Successfully written tree json into tree.json!')
