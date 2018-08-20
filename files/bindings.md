@@ -89,7 +89,7 @@ agenda-richlist-item | chrome://calendar/content/agenda-listbox.xml#agenda-base-
 
 binding | extends
 --- | ---
-attendees-list | does not extend any binding/element
+attendees-list | chrome://global/content/bindings/richlistbox.xml#richlistbox
 selection-bar | does not extend any binding/element
 
 ### calendar-event-dialog-recurrence-preview.xml
@@ -104,9 +104,9 @@ binding | extends
 --- | ---
 scroll-container | xul:box
 freebusy-day | xul:box
-freebusy-timebar | xul:box
+freebusy-timebar | chrome://global/content/bindings/richlistbox.xml#richlistbox
 freebusy-row | xul:box
-freebusy-grid | does not extend any binding/element
+freebusy-grid | chrome://global/content/bindings/richlistbox.xml#richlistbox
 
 ### calendar-invitations-list-bindings
 
@@ -147,8 +147,6 @@ calendar-snooze-popup | does not extend any binding/element
 
 binding | extends
 --- | ---
-panel-menulist | chrome://global/content/bindings/menulist.xml#menulist
-category-panel | chrome://global/content/bindings/popup.xml#panel
 doubleimage-toolbarbutton | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 todaypane-toolbarbutton | chrome://calendar/content/widgets/calendar-widgets.xml#doubleimage-toolbarbutton
 treenode-checkbox | chrome://global/content/bindings/checkbox.xml#checkbox
@@ -291,10 +289,10 @@ result-message | does not extend any binding/element
 binding | extends
 --- | ---
 dummy | xul:box
-attachmentlist-base | chrome://global/content/bindings/listbox.xml#listbox-base
+attachmentlist-base | chrome://global/content/bindings/richlistbox.xml#richlistbox
 attachmentlist-horizontal | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
 attachmentlist-vertical | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
-attachmentitem | chrome://global/content/bindings/listbox.xml#listitem
+attachmentitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
 mail-toggle-headerfield | does not extend any binding/element
 mail-headerfield | does not extend any binding/element
 mail-urlfield | chrome://messenger/content/mailWidgets.xml#mail-headerfield

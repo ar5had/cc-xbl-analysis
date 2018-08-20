@@ -47,10 +47,10 @@
           "name": "daypicker-monthday"
         },
         {
-          "name": "recurrence-preview"
+          "name": "timepicker-grids"
         },
         {
-          "name": "timepicker-grids"
+          "name": "recurrence-preview"
         },
         {
           "name": "modebox",
@@ -73,6 +73,15 @@
         },
         {
           "name": "minimonth"
+        },
+        {
+          "name": "scroll-container"
+        },
+        {
+          "name": "freebusy-day"
+        },
+        {
+          "name": "freebusy-row"
         },
         {
           "name": "calendar-day-label"
@@ -98,18 +107,6 @@
               "name": "searchoperator"
             }
           ]
-        },
-        {
-          "name": "scroll-container"
-        },
-        {
-          "name": "freebusy-day"
-        },
-        {
-          "name": "freebusy-timebar"
-        },
-        {
-          "name": "freebusy-row"
         }
       ]
     },
@@ -118,22 +115,6 @@
       "children": [
         {
           "name": "calendar-task-tree-todaypane"
-        }
-      ]
-    },
-    {
-      "name": "xul:menupopup",
-      "children": [
-        {
-          "name": "task-menupopup",
-          "children": [
-            {
-              "name": "task-progress-menupopup"
-            },
-            {
-              "name": "task-priority-menupopup"
-            }
-          ]
         }
       ]
     },
@@ -187,6 +168,22 @@
       ]
     },
     {
+      "name": "xul:menupopup",
+      "children": [
+        {
+          "name": "task-menupopup",
+          "children": [
+            {
+              "name": "task-progress-menupopup"
+            },
+            {
+              "name": "task-priority-menupopup"
+            }
+          ]
+        }
+      ]
+    },
+    {
       "name": "richlistitem",
       "children": [
         {
@@ -207,10 +204,10 @@
           "name": "calendar-invitations-richlistitem"
         },
         {
-          "name": "calendar-alarm-widget"
+          "name": "calendar-subscriptions-richlistitem"
         },
         {
-          "name": "calendar-subscriptions-richlistitem"
+          "name": "calendar-alarm-widget"
         },
         {
           "name": "account"
@@ -220,6 +217,9 @@
         },
         {
           "name": "contact"
+        },
+        {
+          "name": "conv"
         },
         {
           "name": "activity-group"
@@ -237,9 +237,6 @@
               "name": "activity-warning"
             }
           ]
-        },
-        {
-          "name": "conv"
         },
         {
           "name": "group"
@@ -277,17 +274,11 @@
               "name": "ruleaction"
             }
           ]
+        },
+        {
+          "name": "attachmentitem"
         }
       ]
-    },
-    {
-      "name": "calendar-time-bar"
-    },
-    {
-      "name": "calendar-event-gripbar"
-    },
-    {
-      "name": "calendar-event-column"
     },
     {
       "name": "menulist-editable",
@@ -347,14 +338,26 @@
         },
         {
           "name": "calendar-subscriptions-richlistbox"
-        }
-      ]
-    },
-    {
-      "name": "xul:row",
-      "children": [
+        },
         {
-          "name": "item-date-row"
+          "name": "attendees-list"
+        },
+        {
+          "name": "freebusy-timebar"
+        },
+        {
+          "name": "freebusy-grid"
+        },
+        {
+          "name": "attachmentlist-base",
+          "children": [
+            {
+              "name": "attachmentlist-horizontal"
+            },
+            {
+              "name": "attachmentlist-vertical"
+            }
+          ]
         }
       ]
     },
@@ -362,30 +365,10 @@
       "name": "calendar-category-box"
     },
     {
-      "name": "calendar-snooze-popup"
-    },
-    {
-      "name": "menulist",
+      "name": "xul:row",
       "children": [
         {
-          "name": "panel-menulist"
-        },
-        {
-          "name": "menulist-description"
-        },
-        {
-          "name": "menulist-compact"
-        },
-        {
-          "name": "charsetpicker"
-        }
-      ]
-    },
-    {
-      "name": "panel",
-      "children": [
-        {
-          "name": "category-panel"
+          "name": "item-date-row"
         }
       ]
     },
@@ -404,15 +387,15 @@
           "name": "badgebutton"
         },
         {
+          "name": "tabmail-close-tab-button"
+        },
+        {
           "name": "menu-vertical",
           "children": [
             {
               "name": "appmenu-vertical"
             }
           ]
-        },
-        {
-          "name": "tabmail-close-tab-button"
         }
       ]
     },
@@ -436,7 +419,7 @@
       ]
     },
     {
-      "name": "attendees-list"
+      "name": "calendar-snooze-popup"
     },
     {
       "name": "selection-bar"
@@ -449,6 +432,14 @@
       "children": [
         {
           "name": "threadPaneColumnPicker"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete",
+      "children": [
+        {
+          "name": "glodaSearch"
         }
       ]
     },
@@ -540,6 +531,56 @@
       ]
     },
     {
+      "name": "tabmail"
+    },
+    {
+      "name": "tabbox",
+      "children": [
+        {
+          "name": "tabmail-tabbox"
+        }
+      ]
+    },
+    {
+      "name": "arrowscrollbox-clicktoscroll",
+      "children": [
+        {
+          "name": "tabmail-arrowscrollbox"
+        }
+      ]
+    },
+    {
+      "name": "tabs",
+      "children": [
+        {
+          "name": "tabmail-tabs"
+        }
+      ]
+    },
+    {
+      "name": "popup",
+      "children": [
+        {
+          "name": "tabmail-alltabs-popup"
+        },
+        {
+          "name": "addrbooks-menupopup"
+        },
+        {
+          "name": "map-list"
+        },
+        {
+          "name": "folder-menupopup"
+        },
+        {
+          "name": "popup-base"
+        }
+      ]
+    },
+    {
+      "name": "statuspanel"
+    },
+    {
       "name": "statusbar"
     },
     {
@@ -549,28 +590,91 @@
       "name": "dialogheader"
     },
     {
-      "name": "listbox-base",
+      "name": "menulist",
       "children": [
         {
-          "name": "attachmentlist-base",
+          "name": "menulist-compact"
+        },
+        {
+          "name": "charsetpicker"
+        },
+        {
+          "name": "menulist-description"
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-rich-result-popup",
+      "children": [
+        {
+          "name": "glodacomplete-rich-result-popup"
+        }
+      ]
+    },
+    {
+      "name": "preferences"
+    },
+    {
+      "name": "preference"
+    },
+    {
+      "name": "dialog",
+      "children": [
+        {
+          "name": "prefwindow",
           "children": [
             {
-              "name": "attachmentlist-horizontal"
-            },
-            {
-              "name": "attachmentlist-vertical"
+              "name": "preftab"
             }
           ]
         }
       ]
     },
     {
-      "name": "listitem",
+      "name": "prefpane"
+    },
+    {
+      "name": "radio",
       "children": [
         {
-          "name": "attachmentitem"
+          "name": "panebutton"
         }
       ]
+    },
+    {
+      "name": "ruleactiontype-menulist"
+    },
+    {
+      "name": "ruleactiontarget-base",
+      "children": [
+        {
+          "name": "ruleactiontarget-tag"
+        },
+        {
+          "name": "ruleactiontarget-priority"
+        },
+        {
+          "name": "ruleactiontarget-junkscore"
+        },
+        {
+          "name": "ruleactiontarget-replyto"
+        },
+        {
+          "name": "ruleactiontarget-forwardto"
+        },
+        {
+          "name": "ruleactiontarget-folder"
+        }
+      ]
+    },
+    {
+      "name": "calendar-time-bar"
+    },
+    {
+      "name": "calendar-event-gripbar"
+    },
+    {
+      "name": "calendar-event-column"
     },
     {
       "name": "mail-toggle-headerfield"
@@ -611,26 +715,6 @@
       "name": "searchvalue"
     },
     {
-      "name": "popup",
-      "children": [
-        {
-          "name": "popup-base"
-        },
-        {
-          "name": "addrbooks-menupopup"
-        },
-        {
-          "name": "map-list"
-        },
-        {
-          "name": "tabmail-alltabs-popup"
-        },
-        {
-          "name": "folder-menupopup"
-        }
-      ]
-    },
-    {
       "name": "tooltip",
       "children": [
         {
@@ -658,111 +742,6 @@
       "children": [
         {
           "name": "menuitem-iconic-desc-noaccel"
-        }
-      ]
-    },
-    {
-      "name": "autocomplete-rich-result-popup",
-      "children": [
-        {
-          "name": "glodacomplete-rich-result-popup"
-        }
-      ]
-    },
-    {
-      "name": "tabmail"
-    },
-    {
-      "name": "tabbox",
-      "children": [
-        {
-          "name": "tabmail-tabbox"
-        }
-      ]
-    },
-    {
-      "name": "arrowscrollbox-clicktoscroll",
-      "children": [
-        {
-          "name": "tabmail-arrowscrollbox"
-        }
-      ]
-    },
-    {
-      "name": "tabs",
-      "children": [
-        {
-          "name": "tabmail-tabs"
-        }
-      ]
-    },
-    {
-      "name": "statuspanel"
-    },
-    {
-      "name": "preferences"
-    },
-    {
-      "name": "preference"
-    },
-    {
-      "name": "dialog",
-      "children": [
-        {
-          "name": "prefwindow",
-          "children": [
-            {
-              "name": "preftab"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "prefpane"
-    },
-    {
-      "name": "radio",
-      "children": [
-        {
-          "name": "panebutton"
-        }
-      ]
-    },
-    {
-      "name": "autocomplete",
-      "children": [
-        {
-          "name": "glodaSearch"
-        }
-      ]
-    },
-    {
-      "name": "freebusy-grid"
-    },
-    {
-      "name": "ruleactiontype-menulist"
-    },
-    {
-      "name": "ruleactiontarget-base",
-      "children": [
-        {
-          "name": "ruleactiontarget-tag"
-        },
-        {
-          "name": "ruleactiontarget-priority"
-        },
-        {
-          "name": "ruleactiontarget-junkscore"
-        },
-        {
-          "name": "ruleactiontarget-replyto"
-        },
-        {
-          "name": "ruleactiontarget-forwardto"
-        },
-        {
-          "name": "ruleactiontarget-folder"
         }
       ]
     }
