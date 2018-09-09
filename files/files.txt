@@ -40,9 +40,12 @@
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/mail/base/content/extensions.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/content/overlayBindings.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/textbox.xml
+/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/menubutton.xml
+/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/notificationbox.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/numberbox.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/spinbuttons.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/datetimepicker.xml
+/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/menulist.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/toolbar.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/generalBindings.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/common/bindings/preferences.xml

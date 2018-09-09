@@ -2,9 +2,10 @@ class InheritanceTree {
     constructor() {
         this.rootNodeName = 'root'
         this.nodes = { [this.rootNodeName]: {} }
+        this.nodesProps = {}
     }
 
-    addChild(parentName, childName) {
+    addChild(parentName, childName, childNodeProps) {
         parentName = parentName === null ? this.rootNodeName : parentName
 
         const parentObj = this._getParentObj(parentName)
@@ -15,6 +16,7 @@ class InheritanceTree {
         const childObj = this._getChildObj(childName)
 
         parentObj[childName] = childObj
+        this.nodesProps[childName] = childNodeProps
     }
 
     _getParentObj(nodeName) {
@@ -71,6 +73,10 @@ class InheritanceTree {
         // since there won't be any type of value except strings
         // in the nodes tree, this technique will work for deep cloning
         return JSON.parse(JSON.stringify(this.nodes))
+    }
+
+    getNodesProps() {
+        return JSON.parse(JSON.stringify(this.nodesProps))
     }
 }
 

@@ -1,9 +1,9 @@
-const draw = data => {
+const draw = () => {
     const ww = window.innerWidth - 50
 
     let margin = { top: 40, right: 40, bottom: 40, left: 100 },
         width = (ww > 1300 ? ww : 1300) - margin.left - margin.right,
-        height = 4000 - margin.top - margin.bottom
+        height = 7000 - margin.top - margin.bottom
 
     let i = 0,
         duration = 100,
@@ -94,11 +94,11 @@ const draw = data => {
         let nodeEnter = node.enter().append('g')
             .attr('class', 'node')
             .attr('transform', function (d) { return 'translate(' + source.y0 + ',' + source.x0 + ')' })
-            .on('click', click)
 
         nodeEnter.append('circle')
             .attr('r', 1e-6)
             .style('fill', function (d) { return d._children ? 'lightsteelblue' : '#fff' })
+            .on('click', click)
 
         nodeEnter.append('text')
             .attr('x', function (d) { return d.children || d._children ? -10 : 10 })
@@ -106,6 +106,51 @@ const draw = data => {
             .attr('text-anchor', function (d) { return d.children || d._children ? 'end' : 'start' })
             .text(function (d) { return d.name })
             .style('fill-opacity', 1e-6)
+            .style('text-decoration', d => {
+                const hasLink = Boolean(d.props && d.props.link)
+                return hasLink ? 'underline' : 'inherit'
+            })
+            .on('click', d => {
+                const link = d.props && d.props.link
+                if (link)
+                    window.open(link, '_blank')
+            })
+
+        nodeEnter.append('rect')
+            .attr('width', 10)
+            .attr('height', 10)
+            .attr('rx', 2)
+            .attr('ry', 2)
+            .attr('x', 10)
+            .attr('y', 10)
+            .attr('class', d => {
+                const hasContent = d.props && d.props.hasContent
+                return hasContent ? 'showC' : 'hide'
+            })
+
+        nodeEnter.append('rect')
+            .attr('width', 10)
+            .attr('height', 10)
+            .attr('rx', 2)
+            .attr('ry', 2)
+            .attr('x', 25)
+            .attr('y', 10)
+            .attr('class', d => {
+                const hasImplementation = d.props && d.props.hasImplementation
+                return hasImplementation ? 'showI' : 'hide'
+            })
+
+        nodeEnter.append('rect')
+            .attr('width', 10)
+            .attr('height', 10)
+            .attr('rx', 2)
+            .attr('ry', 2)
+            .attr('x', 40)
+            .attr('y', 10)
+            .attr('class', d => {
+                const hasHandlers = d.props && d.props.hasHandlers
+                return hasHandlers ? 'showH' : 'hide'
+            })
 
         // Transition nodes to their new position.
         let nodeUpdate = node.transition()

@@ -15,8 +15,15 @@
         <button class="openAll" onclick="toggleAllNodes('open')">Open all nodes</button>
         <button class="closeAll" onclick="toggleAllNodes('close')">Collapse all nodes</button>
     </div>
+    <div class="btn-container filter">
+        Filter:
+        <button class="contentButton" onclick="">Content</button>
+        <button class="implementationButton" onclick="">Implementation</button>
+        <button class="handlerbutton" onclick="">Handlers</button>
+    </div>
     <div class="svgContainer">
-        <svg></svg>
+        <svg>
+        </svg>
     </div>
     <script type="text/javascript" src="./scripts/d3.js"></script>
     <script src="./scripts/draw_tree.js"></script>

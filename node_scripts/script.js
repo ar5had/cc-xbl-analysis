@@ -7,7 +7,7 @@ const log = require('eyes').inspector({ maxLength: false })
 const file = './files/files.txt'
 const tree = new inheritanceTree()
 
-const populateTree = (extendedBinding, childBinding) => {
+const populateTree = (extendedBinding, childBinding, childNodeProps) => {
     let extendedBindingName = null
 
     // extended binding is either a xul element or another binding
@@ -16,7 +16,7 @@ const populateTree = (extendedBinding, childBinding) => {
             extendedBinding.startsWith('xul:') ? extendedBinding : extendedBinding.split('#')[1]
     }
 
-    tree.addChild(extendedBindingName, childBinding)
+    tree.addChild(extendedBindingName, childBinding, childNodeProps)
 }
 
 const writeBindingsMdFile = data => {
@@ -39,7 +39,7 @@ const writeBindingsMdFile = data => {
     })
 }
 
-const convertTreeIntoD3Format = (tree, res = {}) => {
+const convertTreeIntoD3Format = (tree, nodeProps, res = {}) => {
     const keys = Object.keys(tree)
 
     for (let i = 0; i < keys.length; i++) {
@@ -48,20 +48,19 @@ const convertTreeIntoD3Format = (tree, res = {}) => {
 
         // base case
         if (childKeys.length === 0)
-            return { name: key }
+            return { name: key, props: nodeProps[key] }
 
         else {
             res.name = key
-            res.children = childKeys.map(e => convertTreeIntoD3Format({ [e]: tree[key][e] }))
+            res.children = childKeys.map(e => convertTreeIntoD3Format({ [e]: tree[key][e] }, nodeProps))
         }
     }
 
     return res
 }
 
-const writeTreeJsonFile = tree => {
-
-    const treeJson = JSON.stringify(convertTreeIntoD3Format(tree), null, 2)
+const writeTreeJsonFile = (tree, nodeProps) => {
+    const treeJson = JSON.stringify(convertTreeIntoD3Format(tree, nodeProps), null, 2)
 
     fs.writeFile("./files/tree.json", treeJson, err => {
         if (err)
@@ -84,18 +83,24 @@ const parseXmlFile = (path, i = '=>') =>
                 if (err)
                     return reject(err)
 
-                // use log instead of console.log for nice colored output
-                // log(result)
-
                 const bindingArray = result.BINDINGS.BINDING.map(e => {
                     const bindingName = e['$'].ID
                     const extendedBinding = e['$'].EXTENDS
 
-                    populateTree(extendedBinding, bindingName)
+                    const bindingElements = Object.keys(e).slice(1)
+                    const link = `https://searchfox.org/comm-central/source/${path.slice(path.indexOf('comm/') + 5)}`
+                    const hasContent = bindingElements.includes('CONTENT')
+                    const hasImplementation = bindingElements.includes('IMPLEMENTATION')
+                    const hasHandlers = bindingElements.includes('HANDLERS')
+
+                    populateTree(extendedBinding, bindingName, {
+                        link, hasContent, hasImplementation, hasHandlers
+                    })
 
                     return ({
                         binding: bindingName,
-                        extends: extendedBinding || 'does not extend any binding/element'
+                        extends: extendedBinding || 'does not extend any binding/element',
+                        link, hasContent, hasImplementation, hasHandlers
                     })
                 })
                 const name = result.BINDINGS['$'].ID || fileName
@@ -119,9 +124,9 @@ fs.readFile(file, (err, content) => {
     Promise.all(xmlFilePromises)
         .then(data => {
             // log(data)
-
             writeBindingsMdFile(data)
-            writeTreeJsonFile(tree.getNodesObj())
+            writeTreeJsonFile(tree.getNodesObj(), tree.getNodesProps())
+            // log(tree.getNodesProps());
         })
         .catch(reason => {
             console.error('Error occurred while handling one of the xmlFilePromises!')

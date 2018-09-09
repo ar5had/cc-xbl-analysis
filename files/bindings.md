@@ -14,7 +14,7 @@ gdata-list-tree | chrome://calendar/content/widgets/calendar-list-tree.xml#calen
 
 binding | extends
 --- | ---
-panellist | chrome://global/content/bindings/menulist.xml#menulist-editable
+panellist | chrome://messenger/content/menulist.xml#menulist-editable
 datetextpicker | chrome://calendar/content/datetimepickers/datetimepickers.xml#datetimepicker-base
 datepicker | chrome://calendar/content/datetimepickers/datetimepickers.xml#datetimepicker-base
 datepicker-forever | chrome://calendar/content/datetimepickers/datetimepickers.xml#datepicker
@@ -325,12 +325,10 @@ binding | extends
 --- | ---
 tabmail | does not extend any binding/element
 tabmail-tab | chrome://global/content/bindings/tabbox.xml#tab
-tabmail-tabbox | chrome://global/content/bindings/tabbox.xml#tabbox
 tabmail-arrowscrollbox | chrome://global/content/bindings/scrollbox.xml#arrowscrollbox-clicktoscroll
 tabmail-tabs | chrome://global/content/bindings/tabbox.xml#tabs
 tabmail-alltabs-popup | chrome://global/content/bindings/popup.xml#popup
 tabmail-close-tab-button | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
-statuspanel | does not extend any binding/element
 
 ### thunderbird-addon-bindings
 
@@ -349,6 +347,19 @@ overlayTrigger | does not extend any binding/element
 binding | extends
 --- | ---
 textbox | xul:box
+
+### menubuttonBindings
+
+binding | extends
+--- | ---
+menu-button-base | chrome://global/content/bindings/button.xml#button-base
+menu-button | chrome://messenger/content/menubutton.xml#menu-button-base
+
+### notificationboxBindings
+
+binding | extends
+--- | ---
+notificationbox | does not extend any binding/element
 
 ### numberboxBindings
 
@@ -372,6 +383,12 @@ datepicker | chrome://communicator/content/bindings/datetimepicker.xml#datetimep
 datepicker-grid | chrome://communicator/content/bindings/datetimepicker.xml#datepicker
 datepicker-popup | chrome://communicator/content/bindings/datetimepicker.xml#datepicker
 
+### menulistEditableBindings
+
+binding | extends
+--- | ---
+menulist-editable | chrome://global/content/bindings/menulist.xml#menulist
+
 ### toolbarBindings
 
 binding | extends
@@ -384,7 +401,7 @@ menubar | does not extend any binding/element
 toolbarpaletteitem | does not extend any binding/element
 toolbarpaletteitem-palette | chrome://communicator/content/bindings/toolbar.xml#toolbarpaletteitem
 toolbarpaletteitem-palette-wrapping-label | chrome://communicator/content/bindings/toolbar.xml#toolbarpaletteitem
-menu-button | chrome://global/content/bindings/button.xml#menu-button-base
+menu-button | chrome://global/content/bindings/button.xml#button-base
 
 ### generalBindings
 
