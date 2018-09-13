@@ -37,6 +37,11 @@ h3.center {
 
 .node {
     cursor: pointer;
+    opacity: .1;
+}
+
+.node.active {
+    opacity: 1;
 }
 
 .node circle {
@@ -121,10 +126,20 @@ button:active {
 }
 
 .btn-container.filter {
-    grid-template-columns: 50px 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     font-size: 12px;
     text-transform: uppercase;
     color: #888;
     font-weight: bold;
     align-items: center;
+}
+
+.filter > button {
+    opacity: .25;
+    box-shadow: none;
+}
+
+.filter > button.active {
+    opacity: 1;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 1, 0.15);
 }

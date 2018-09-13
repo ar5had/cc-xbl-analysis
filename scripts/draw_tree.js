@@ -1,3 +1,5 @@
+window.c = window.i = window.h = true;
+
 const draw = () => {
     const ww = window.innerWidth - 50
 
@@ -92,7 +94,20 @@ const draw = () => {
 
         // Enter any new nodes at the parent's previous position.
         let nodeEnter = node.enter().append('g')
-            .attr('class', 'node')
+            .attr('class', (d) => {
+                // const hasContent = d.props && d.props.hasContent
+                // const hasHandler = d.props && d.props.hasHandler
+                // const hasImplementation = d.props && d.props.hasImplementation
+
+                // if (
+                //     (hasContent && c) ||
+                //     (hasHandler && h) ||
+                //     (hasImplementation && i)
+                // )
+                //     return "node active"
+                // else
+                    return "node active"
+            })
             .attr('transform', function (d) { return 'translate(' + source.y0 + ',' + source.x0 + ')' })
 
         nodeEnter.append('circle')
@@ -219,6 +234,22 @@ const draw = () => {
             d._children = null
         }
         update(d)
+    }
+
+    window.highlightNodes = type => {
+        if (type === "content") {
+            document.querySelector('.contentButton').classList.toggle('active')
+            c = !c
+            update(root)
+        } else if (type === "handler") {
+            document.querySelector('.handlerbutton').classList.toggle('active')
+            h = !h
+            update(root)
+        } else if (type === "implementation") {
+            document.querySelector('.implementationButton').classList.toggle('active')
+            i = !i
+            update(root)
+        }
     }
 
 }

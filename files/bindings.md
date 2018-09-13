@@ -150,8 +150,6 @@ binding | extends
 doubleimage-toolbarbutton | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 todaypane-toolbarbutton | chrome://calendar/content/widgets/calendar-widgets.xml#doubleimage-toolbarbutton
 treenode-checkbox | chrome://global/content/bindings/checkbox.xml#checkbox
-modevbox | chrome://calendar/content/widgets/calendar-widgets.xml#modebox
-modehbox | chrome://calendar/content/widgets/calendar-widgets.xml#modebox
 modebox | xul:box
 dragndropContainer | does not extend any binding/element
 view-tab | chrome://global/content/bindings/tabbox.xml#tab
@@ -184,7 +182,6 @@ binding | extends
 --- | ---
 account | chrome://global/content/bindings/richlistbox.xml#richlistitem
 buttons | xul:hbox
-nobuttons | xul:hbox
 
 ### imTooltipBindings
 
@@ -294,8 +291,6 @@ attachmentlist-horizontal | chrome://messenger/content/mailWidgets.xml#attachmen
 attachmentlist-vertical | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
 attachmentitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
 mail-toggle-headerfield | does not extend any binding/element
-mail-headerfield | does not extend any binding/element
-mail-urlfield | chrome://messenger/content/mailWidgets.xml#mail-headerfield
 mail-emailheaderfield | does not extend any binding/element
 mail-multi-emailHeaderField | does not extend any binding/element
 mail-emailaddress | does not extend any binding/element
@@ -329,6 +324,7 @@ tabmail-arrowscrollbox | chrome://global/content/bindings/scrollbox.xml#arrowscr
 tabmail-tabs | chrome://global/content/bindings/tabbox.xml#tabs
 tabmail-alltabs-popup | chrome://global/content/bindings/popup.xml#popup
 tabmail-close-tab-button | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
+statuspanel | does not extend any binding/element
 
 ### thunderbird-addon-bindings
 
