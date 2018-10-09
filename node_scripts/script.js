@@ -4,6 +4,7 @@ const json2md = require('json2md')
 const inheritanceTree = require('./InheritanceTree')
 const log = require('eyes').inspector({ maxLength: false })
 
+let bindingsCount = 0;
 const file = './files/files.txt'
 const tree = new inheritanceTree()
 
@@ -20,15 +21,18 @@ const populateTree = (extendedBinding, childBinding, childNodeProps) => {
 }
 
 const writeBindingsMdFile = data => {
-    let mdFormatData = data.map(e => ([
-        { h3: `${e.name}` },
-        {
-            table: {
-                headers: ['binding', 'extends'],
-                rows: e.bindingArray
+    let mdFormatData = data.map(e => {
+        bindingsCount += e.bindingArray.length
+        return ([
+            { h3: `${e.name}` },
+            {
+                table: {
+                    headers: ['binding', 'extends'],
+                    rows: e.bindingArray
+                }
             }
-        }
-    ]))
+        ])
+    })
 
     const markdownFileContent = json2md(mdFormatData);
 
@@ -127,6 +131,9 @@ fs.readFile(file, (err, content) => {
             writeBindingsMdFile(data)
             writeTreeJsonFile(tree.getNodesObj(), tree.getNodesProps())
             // log(tree.getNodesProps());
+            log(`Total number of bindings = ${bindingsCount}`);
+            // binding data
+            // log(data);
         })
         .catch(reason => {
             console.error('Error occurred while handling one of the xmlFilePromises!')

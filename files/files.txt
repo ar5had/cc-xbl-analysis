@@ -1,4 +1,3 @@
-/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/calendar/lightning/content/lightning-widgets.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/calendar/providers/gdata/content/gdata-list-tree.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/calendar/resources/content/datetimepickers/datetimepickers.xml
 /Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm/calendar/base/content/calendar-task-tree.xml

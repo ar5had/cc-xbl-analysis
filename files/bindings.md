@@ -1,9 +1,3 @@
-### lightning-widgets
-
-binding | extends
---- | ---
-lightning-notification-bar | xul:hbox
-
 ### gdata-list-tree-bindings
 
 binding | extends
@@ -126,7 +120,6 @@ calendar-category-box | does not extend any binding/element
 
 binding | extends
 --- | ---
-calendar-caption | xul:hbox
 item-date-row | xul:row
 
 ### calendar-subscriptions-list-bindings
@@ -149,7 +142,6 @@ binding | extends
 --- | ---
 doubleimage-toolbarbutton | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 todaypane-toolbarbutton | chrome://calendar/content/widgets/calendar-widgets.xml#doubleimage-toolbarbutton
-treenode-checkbox | chrome://global/content/bindings/checkbox.xml#checkbox
 modebox | xul:box
 dragndropContainer | does not extend any binding/element
 view-tab | chrome://global/content/bindings/tabbox.xml#tab
@@ -290,7 +282,6 @@ attachmentlist-base | chrome://global/content/bindings/richlistbox.xml#richlistb
 attachmentlist-horizontal | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
 attachmentlist-vertical | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
 attachmentitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
-mail-toggle-headerfield | does not extend any binding/element
 mail-emailheaderfield | does not extend any binding/element
 mail-multi-emailHeaderField | does not extend any binding/element
 mail-emailaddress | does not extend any binding/element
@@ -298,7 +289,6 @@ mail-newsgroup | does not extend any binding/element
 mail-newsgroups-headerfield | does not extend any binding/element
 mail-messageids-headerfield | does not extend any binding/element
 mail-messageid | does not extend any binding/element
-mail-headerfield-tags | does not extend any binding/element
 search-menulist-abstract | xul:box
 searchattribute | chrome://messenger/content/mailWidgets.xml#search-menulist-abstract
 searchoperator | chrome://messenger/content/mailWidgets.xml#search-menulist-abstract
@@ -306,8 +296,6 @@ searchvalue | does not extend any binding/element
 popup-base | chrome://global/content/bindings/popup.xml#popup
 folderSummary-popup | chrome://global/content/bindings/popup.xml#tooltip
 folderSummary | does not extend any binding/element
-folderSummary-location | does not extend any binding/element
-folderSummary-subfoldersSummary | does not extend any binding/element
 folderSummary-message | does not extend any binding/element
 splitmenu | does not extend any binding/element
 appmenu-vertical | chrome://messenger/content/generalBindings.xml#menu-vertical
@@ -324,7 +312,6 @@ tabmail-arrowscrollbox | chrome://global/content/bindings/scrollbox.xml#arrowscr
 tabmail-tabs | chrome://global/content/bindings/tabbox.xml#tabs
 tabmail-alltabs-popup | chrome://global/content/bindings/popup.xml#popup
 tabmail-close-tab-button | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
-statuspanel | does not extend any binding/element
 
 ### thunderbird-addon-bindings
 
@@ -405,7 +392,6 @@ binding | extends
 --- | ---
 statusbar | does not extend any binding/element
 statusbarpanel | does not extend any binding/element
-dialogheader | does not extend any binding/element
 menu-vertical | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 
 ### preferencesBindings
