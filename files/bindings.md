@@ -179,7 +179,7 @@ buttons | xul:hbox
 
 binding | extends
 --- | ---
-tooltip | chrome://global/content/bindings/popup.xml#tooltip
+tooltip | chrome://global/content/bindings/popup.xml#panel
 
 ### browserBindings
 
@@ -256,7 +256,7 @@ glodaSearch | chrome://global/content/bindings/autocomplete.xml#autocomplete
 
 binding | extends
 --- | ---
-threadPaneColumnPicker | chrome://global/content/bindings/tree.xml#tree-base
+threadPaneColumnPicker | chrome://global/content/bindings/general.xml#basecontrol
 
 ### glodaFacetBindings
 
@@ -269,7 +269,6 @@ facet-boolean | chrome://messenger/content/glodaFacetBindings.xml#facet-base
 facet-boolean-filtered | chrome://messenger/content/glodaFacetBindings.xml#facet-boolean
 popup-menu | does not extend any binding/element
 facet-discrete | does not extend any binding/element
-facet-date | does not extend any binding/element
 results-message | does not extend any binding/element
 result-message | does not extend any binding/element
 
@@ -284,11 +283,7 @@ attachmentlist-vertical | chrome://messenger/content/mailWidgets.xml#attachmentl
 attachmentitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
 mail-emailheaderfield | does not extend any binding/element
 mail-multi-emailHeaderField | does not extend any binding/element
-mail-emailaddress | does not extend any binding/element
-mail-newsgroup | does not extend any binding/element
-mail-newsgroups-headerfield | does not extend any binding/element
 mail-messageids-headerfield | does not extend any binding/element
-mail-messageid | does not extend any binding/element
 search-menulist-abstract | xul:box
 searchattribute | chrome://messenger/content/mailWidgets.xml#search-menulist-abstract
 searchoperator | chrome://messenger/content/mailWidgets.xml#search-menulist-abstract
@@ -329,7 +324,7 @@ overlayTrigger | does not extend any binding/element
 
 binding | extends
 --- | ---
-textbox | xul:box
+textbox | does not extend any binding/element
 
 ### menubuttonBindings
 
@@ -390,8 +385,6 @@ menu-button | chrome://global/content/bindings/button.xml#button-base
 
 binding | extends
 --- | ---
-statusbar | does not extend any binding/element
-statusbarpanel | does not extend any binding/element
 menu-vertical | chrome://global/content/bindings/toolbarbutton.xml#toolbarbutton
 
 ### preferencesBindings
@@ -449,10 +442,3 @@ binding | extends
 ruleactiontype-menulist | does not extend any binding/element
 filterlistitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
 ruleaction | #filterlistitem
-ruleactiontarget-base | does not extend any binding/element
-ruleactiontarget-tag | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
-ruleactiontarget-priority | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
-ruleactiontarget-junkscore | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
-ruleactiontarget-replyto | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
-ruleactiontarget-forwardto | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
-ruleactiontarget-folder | chrome://messenger/content/searchWidgets.xml#ruleactiontarget-base
