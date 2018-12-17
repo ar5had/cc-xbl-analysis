@@ -144,7 +144,7 @@ doubleimage-toolbarbutton | chrome://global/content/bindings/toolbarbutton.xml#t
 todaypane-toolbarbutton | chrome://calendar/content/widgets/calendar-widgets.xml#doubleimage-toolbarbutton
 modebox | xul:box
 dragndropContainer | does not extend any binding/element
-view-tab | chrome://global/content/bindings/tabbox.xml#tab
+view-tab | does not extend any binding/element
 
 ### xulMiniMonth
 
@@ -281,7 +281,6 @@ attachmentlist-base | chrome://global/content/bindings/richlistbox.xml#richlistb
 attachmentlist-horizontal | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
 attachmentlist-vertical | chrome://messenger/content/mailWidgets.xml#attachmentlist-base
 attachmentitem | chrome://global/content/bindings/richlistbox.xml#richlistitem
-mail-emailheaderfield | does not extend any binding/element
 mail-multi-emailHeaderField | does not extend any binding/element
 mail-messageids-headerfield | does not extend any binding/element
 search-menulist-abstract | xul:box
@@ -289,9 +288,6 @@ searchattribute | chrome://messenger/content/mailWidgets.xml#search-menulist-abs
 searchoperator | chrome://messenger/content/mailWidgets.xml#search-menulist-abstract
 searchvalue | does not extend any binding/element
 popup-base | chrome://global/content/bindings/popup.xml#popup
-folderSummary-popup | chrome://global/content/bindings/popup.xml#tooltip
-folderSummary | does not extend any binding/element
-folderSummary-message | does not extend any binding/element
 splitmenu | does not extend any binding/element
 appmenu-vertical | chrome://messenger/content/generalBindings.xml#menu-vertical
 menulist-description | chrome://global/content/bindings/menulist.xml#menulist
@@ -338,6 +334,7 @@ menu-button | chrome://messenger/content/menubutton.xml#menu-button-base
 binding | extends
 --- | ---
 notificationbox | does not extend any binding/element
+notification | does not extend any binding/element
 
 ### numberboxBindings
 
