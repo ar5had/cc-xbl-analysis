@@ -25,252 +25,6 @@
       ]
     },
     {
-      "name": "timepicker-hour",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "timepicker-minute",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "xul:box",
-      "children": [
-        {
-          "name": "timepicker-grids",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "daypicker-weekday",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-daypicker.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "daypicker-monthday",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-daypicker.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "recurrence-preview",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-recurrence-preview.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "modebox",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/calendar-widgets.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "calendar-day-label",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-base-view.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "dummy",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-            "hasContent": false,
-            "hasImplementation": false,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "search-menulist-abstract",
-          "children": [
-            {
-              "name": "searchattribute",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-                "hasContent": false,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "searchoperator",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-                "hasContent": false,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        },
-        {
-          "name": "minimonth-header",
-          "children": [
-            {
-              "name": "active-minimonth-header",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/minimonth.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": true
-              }
-            }
-          ]
-        },
-        {
-          "name": "minimonth",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/minimonth.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "scroll-container",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "freebusy-day",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "freebusy-row",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        }
-      ]
-    },
-    {
-      "name": "basecontrol",
-      "children": [
-        {
-          "name": "datetimepicker-base",
-          "children": [
-            {
-              "name": "datetextpicker",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "datepicker",
-              "children": [
-                {
-                  "name": "datepicker-forever",
-                  "props": {
-                    "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-                    "hasContent": true,
-                    "hasImplementation": true,
-                    "hasHandlers": false
-                  }
-                },
-                {
-                  "name": "datepicker-grid",
-                  "props": {
-                    "link": "https://searchfox.org/comm-central/source/common/bindings/datetimepicker.xml",
-                    "hasContent": true,
-                    "hasImplementation": true,
-                    "hasHandlers": true
-                  }
-                },
-                {
-                  "name": "datepicker-popup",
-                  "props": {
-                    "link": "https://searchfox.org/comm-central/source/common/bindings/datetimepicker.xml",
-                    "hasContent": true,
-                    "hasImplementation": true,
-                    "hasHandlers": false
-                  }
-                }
-              ]
-            },
-            {
-              "name": "timepicker",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": true
-              }
-            },
-            {
-              "name": "datetimepicker",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        },
-        {
-          "name": "threadPaneColumnPicker",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/threadPaneColumnPicker.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "spinbuttons",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/common/bindings/spinbuttons.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        }
-      ]
-    },
-    {
       "name": "button-base",
       "children": [
         {
@@ -303,154 +57,25 @@
       ]
     },
     {
-      "name": "calendar-time-bar",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": false
-      }
-    },
-    {
-      "name": "calendar-event-gripbar",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "calendar-event-column",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "dragndropContainer",
+      "name": "task-menupopup",
       "children": [
         {
-          "name": "calendar-header-container",
+          "name": "task-progress-menupopup",
           "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "calendar-month-day-box",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-month-view.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "calendar-editable-item",
-      "children": [
-        {
-          "name": "calendar-event-box",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "calendar-month-day-box-item",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-month-view.xml",
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-menus.xml",
             "hasContent": true,
             "hasImplementation": true,
             "hasHandlers": false
           }
-        }
-      ]
-    },
-    {
-      "name": "calendar-base-view",
-      "children": [
-        {
-          "name": "calendar-multiday-view",
-          "children": [
-            {
-              "name": "calendar-day-view",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
-                "hasContent": false,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "calendar-week-view",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
-                "hasContent": false,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
         },
         {
-          "name": "calendar-month-base-view",
-          "children": [
-            {
-              "name": "calendar-multiweek-view",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
-                "hasContent": false,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "calendar-month-view",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
-                "hasContent": false,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "xul:menupopup",
-      "children": [
-        {
-          "name": "task-menupopup",
-          "children": [
-            {
-              "name": "task-progress-menupopup",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-menus.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "task-priority-menupopup",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-menus.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
+          "name": "task-priority-menupopup",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-menus.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": false
+          }
         }
       ]
     },
@@ -499,15 +124,6 @@
           }
         },
         {
-          "name": "calendar-alarm-widget",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/calendar-alarm-widget.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
           "name": "calendar-subscriptions-richlistitem",
           "props": {
             "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/calendar-subscriptions-list.xml",
@@ -517,59 +133,9 @@
           }
         },
         {
-          "name": "account",
+          "name": "calendar-alarm-widget",
           "props": {
-            "link": "https://searchfox.org/comm-central/source/chat/content/account.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "activity-group",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/components/activity/content/activity.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "activity-base",
-          "children": [
-            {
-              "name": "activity-process",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/components/activity/content/activity.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "activity-event",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/components/activity/content/activity.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "activity-warning",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/components/activity/content/activity.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        },
-        {
-          "name": "handler",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/components/preferences/handlers.xml",
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/calendar-alarm-widget.xml",
             "hasContent": true,
             "hasImplementation": true,
             "hasHandlers": false
@@ -594,15 +160,6 @@
           }
         },
         {
-          "name": "download",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/components/downloads/content/download.xml",
-            "hasContent": true,
-            "hasImplementation": false,
-            "hasHandlers": false
-          }
-        },
-        {
           "name": "group",
           "props": {
             "link": "https://searchfox.org/comm-central/source/mail/components/im/content/imgroup.xml",
@@ -612,66 +169,12 @@
           }
         },
         {
-          "name": "attachmentitem",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "glodacomplete-base-richlistitem",
+          "name": "filterlistitem",
           "children": [
             {
-              "name": "gloda-single-tag-item",
+              "name": "ruleaction",
               "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "gloda-fulltext-single-item",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "gloda-fulltext-all-item",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "gloda-single-identity-item",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "gloda-contact-chunk",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            },
-            {
-              "name": "gloda-multi-item",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
+                "link": "https://searchfox.org/comm-central/source/mailnews/base/search/content/searchWidgets.xml",
                 "hasContent": true,
                 "hasImplementation": true,
                 "hasHandlers": false
@@ -680,13 +183,105 @@
           ]
         },
         {
-          "name": "filterlistitem",
+          "name": "attachmentitem",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "calendar-editable-item",
+      "children": [
+        {
+          "name": "calendar-month-day-box-item",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-month-view.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": false
+          }
+        },
+        {
+          "name": "calendar-event-box",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "dragndropContainer",
+      "children": [
+        {
+          "name": "calendar-month-day-box",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-month-view.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        },
+        {
+          "name": "calendar-header-container",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "calendar-base-view",
+      "children": [
+        {
+          "name": "calendar-month-base-view",
           "children": [
             {
-              "name": "ruleaction",
+              "name": "calendar-multiweek-view",
               "props": {
-                "link": "https://searchfox.org/comm-central/source/mailnews/base/search/content/searchWidgets.xml",
-                "hasContent": true,
+                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
+                "hasContent": false,
+                "hasImplementation": true,
+                "hasHandlers": false
+              }
+            },
+            {
+              "name": "calendar-month-view",
+              "props": {
+                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
+                "hasContent": false,
+                "hasImplementation": true,
+                "hasHandlers": false
+              }
+            }
+          ]
+        },
+        {
+          "name": "calendar-multiday-view",
+          "children": [
+            {
+              "name": "calendar-day-view",
+              "props": {
+                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
+                "hasContent": false,
+                "hasImplementation": true,
+                "hasHandlers": false
+              }
+            },
+            {
+              "name": "calendar-week-view",
+              "props": {
+                "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-views.xml",
+                "hasContent": false,
                 "hasImplementation": true,
                 "hasHandlers": false
               }
@@ -705,105 +300,13 @@
       }
     },
     {
-      "name": "calendar-task-tree",
-      "children": [
-        {
-          "name": "calendar-task-tree-todaypane",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-task-tree.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        }
-      ]
-    },
-    {
-      "name": "richlistbox",
-      "children": [
-        {
-          "name": "calendar-invitations-richlistbox",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-invitations-list.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "calendar-subscriptions-richlistbox",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/calendar-subscriptions-list.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "attendees-list",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-attendees.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "attachmentlist-base",
-          "children": [
-            {
-              "name": "attachmentlist-horizontal",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": true
-              }
-            },
-            {
-              "name": "attachmentlist-vertical",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        },
-        {
-          "name": "freebusy-timebar",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "freebusy-grid",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        }
-      ]
-    },
-    {
-      "name": "xul:row",
-      "children": [
-        {
-          "name": "item-date-row",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-item-bindings.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        }
-      ]
+      "name": "item-date-row",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-item-bindings.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
     },
     {
       "name": "calendar-snooze-popup",
@@ -832,6 +335,15 @@
           ]
         },
         {
+          "name": "badgebutton",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/mail/components/im/content/badgebutton.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": false
+          }
+        },
+        {
           "name": "tabmail-close-tab-button",
           "props": {
             "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
@@ -853,17 +365,17 @@
               }
             }
           ]
-        },
-        {
-          "name": "badgebutton",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/components/im/content/badgebutton.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
         }
       ]
+    },
+    {
+      "name": "modebox",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/calendar-widgets.xml",
+        "hasContent": false,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
     },
     {
       "name": "view-tab",
@@ -875,9 +387,45 @@
       }
     },
     {
-      "name": "selection-bar",
+      "name": "scroll-container",
       "props": {
-        "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-attendees.xml",
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
+    },
+    {
+      "name": "freebusy-day",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
+    },
+    {
+      "name": "freebusy-row",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
+    },
+    {
+      "name": "minimonth-header",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/minimonth.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
+    },
+    {
+      "name": "minimonth",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/widgets/minimonth.xml",
         "hasContent": true,
         "hasImplementation": true,
         "hasHandlers": true
@@ -898,70 +446,6 @@
       ]
     },
     {
-      "name": "browser",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/chat/content/convbrowser.xml",
-        "hasContent": false,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "xul:hbox",
-      "children": [
-        {
-          "name": "buttons",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/chat/content/account.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        }
-      ]
-    },
-    {
-      "name": "conversation",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/components/im/content/imconversation.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": false
-      }
-    },
-    {
-      "name": "toolbar",
-      "children": [
-        {
-          "name": "conv-info-large",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/components/im/content/imconversation.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "toolbar-menubar-autohide",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/common/bindings/toolbar.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
-        {
-          "name": "toolbar-drag",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/common/bindings/toolbar.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": false
-          }
-        }
-      ]
-    },
-    {
       "name": "autocomplete",
       "children": [
         {
@@ -976,131 +460,68 @@
       ]
     },
     {
-      "name": "query-explanation",
+      "name": "conversation",
       "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
+        "link": "https://searchfox.org/comm-central/source/mail/components/im/content/imconversation.xml",
         "hasContent": true,
         "hasImplementation": true,
         "hasHandlers": false
       }
     },
     {
-      "name": "facets",
+      "name": "tabmail",
       "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
-        "hasContent": true,
+        "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
+        "hasContent": false,
         "hasImplementation": true,
         "hasHandlers": false
       }
     },
     {
-      "name": "facet-base",
+      "name": "tab",
       "children": [
         {
-          "name": "facet-boolean",
-          "children": [
-            {
-              "name": "facet-boolean-filtered",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "popup-menu",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "facet-discrete",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "results-message",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": false
-      }
-    },
-    {
-      "name": "result-message",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/glodaFacetBindings.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "addon-generic",
-      "children": [
-        {
-          "name": "thunderbird-addon-generic",
+          "name": "tabmail-tab",
           "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/extensions.xml",
-            "hasContent": false,
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
+            "hasContent": true,
             "hasImplementation": true,
-            "hasHandlers": false
+            "hasHandlers": true
           }
         }
       ]
     },
     {
-      "name": "mail-multi-emailHeaderField",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": false
-      }
+      "name": "arrowscrollbox",
+      "children": [
+        {
+          "name": "tabmail-arrowscrollbox",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        }
+      ]
     },
     {
-      "name": "mail-messageids-headerfield",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": false
-      }
-    },
-    {
-      "name": "searchvalue",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
+      "name": "tabs",
+      "children": [
+        {
+          "name": "tabmail-tabs",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
+            "hasContent": true,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        }
+      ]
     },
     {
       "name": "popup",
       "children": [
-        {
-          "name": "popup-base",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-            "hasContent": false,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        },
         {
           "name": "tabmail-alltabs-popup",
           "props": {
@@ -1136,73 +557,27 @@
             "hasImplementation": true,
             "hasHandlers": true
           }
-        }
-      ]
-    },
-    {
-      "name": "splitmenu",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "menulist",
-      "children": [
+        },
         {
-          "name": "menulist-description",
+          "name": "popup-base",
           "props": {
             "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-            "hasContent": true,
-            "hasImplementation": false,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "menulist-editable",
-          "children": [
-            {
-              "name": "panellist",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/calendar/resources/content/datetimepickers/datetimepickers.xml",
-                "hasContent": true,
-                "hasImplementation": false,
-                "hasHandlers": false
-              }
-            }
-          ]
-        },
-        {
-          "name": "menulist-compact",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mailnews/compose/content/menulistCompactBindings.xml",
-            "hasContent": true,
-            "hasImplementation": false,
-            "hasHandlers": false
-          }
-        },
-        {
-          "name": "charsetpicker",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mailnews/base/content/charsetList.xml",
             "hasContent": false,
             "hasImplementation": true,
-            "hasHandlers": false
+            "hasHandlers": true
           }
         }
       ]
     },
     {
-      "name": "menuitem",
+      "name": "addon-generic",
       "children": [
         {
-          "name": "menuitem-iconic-desc-noaccel",
+          "name": "thunderbird-addon-generic",
           "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
-            "hasContent": true,
-            "hasImplementation": false,
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/extensions.xml",
+            "hasContent": false,
+            "hasImplementation": true,
             "hasHandlers": false
           }
         }
@@ -1216,71 +591,6 @@
         "hasImplementation": true,
         "hasHandlers": false
       }
-    },
-    {
-      "name": "tabmail",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
-        "hasContent": false,
-        "hasImplementation": true,
-        "hasHandlers": false
-      }
-    },
-    {
-      "name": "tab",
-      "children": [
-        {
-          "name": "tabmail-tab",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "arrowscrollbox-clicktoscroll",
-      "children": [
-        {
-          "name": "tabmail-arrowscrollbox",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "tabs",
-      "children": [
-        {
-          "name": "tabmail-tabs",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/mail/base/content/tabmail.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        }
-      ]
-    },
-    {
-      "name": "textbox",
-      "children": [
-        {
-          "name": "numberbox",
-          "props": {
-            "link": "https://searchfox.org/comm-central/source/common/bindings/numberbox.xml",
-            "hasContent": true,
-            "hasImplementation": true,
-            "hasHandlers": true
-          }
-        }
-      ]
     },
     {
       "name": "notificationbox",
@@ -1301,6 +611,94 @@
       }
     },
     {
+      "name": "calendar-task-tree",
+      "children": [
+        {
+          "name": "calendar-task-tree-todaypane",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-task-tree.xml",
+            "hasContent": false,
+            "hasImplementation": true,
+            "hasHandlers": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "basecontrol",
+      "children": [
+        {
+          "name": "xbl-richlistbox",
+          "children": [
+            {
+              "name": "freebusy-grid",
+              "props": {
+                "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-freebusy.xml",
+                "hasContent": false,
+                "hasImplementation": true,
+                "hasHandlers": false
+              }
+            },
+            {
+              "name": "attachmentlist-base",
+              "children": [
+                {
+                  "name": "attachmentlist-horizontal",
+                  "props": {
+                    "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+                    "hasContent": true,
+                    "hasImplementation": true,
+                    "hasHandlers": true
+                  }
+                },
+                {
+                  "name": "attachmentlist-vertical",
+                  "props": {
+                    "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+                    "hasContent": false,
+                    "hasImplementation": true,
+                    "hasHandlers": false
+                  }
+                }
+              ]
+            },
+            {
+              "name": "attendees-list",
+              "props": {
+                "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-attendees.xml",
+                "hasContent": false,
+                "hasImplementation": true,
+                "hasHandlers": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "autocomplete-rich-result-popup",
+      "children": [
+        {
+          "name": "glodacomplete-rich-result-popup",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
+            "hasContent": false,
+            "hasImplementation": true,
+            "hasHandlers": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "ruleactiontype-menulist",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/mailnews/base/search/content/searchWidgets.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": true
+      }
+    },
+    {
       "name": "toolbox",
       "props": {
         "link": "https://searchfox.org/comm-central/source/common/bindings/toolbar.xml",
@@ -1308,6 +706,20 @@
         "hasImplementation": true,
         "hasHandlers": false
       }
+    },
+    {
+      "name": "toolbar",
+      "children": [
+        {
+          "name": "toolbar-menubar-autohide",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/common/bindings/toolbar.xml",
+            "hasContent": false,
+            "hasImplementation": true,
+            "hasHandlers": true
+          }
+        }
+      ]
     },
     {
       "name": "menubar",
@@ -1342,72 +754,30 @@
       ]
     },
     {
-      "name": "preferences",
+      "name": "mail-multi-emailHeaderField",
       "props": {
-        "link": "https://searchfox.org/comm-central/source/common/bindings/preferences.xml",
-        "hasContent": false,
+        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+        "hasContent": true,
         "hasImplementation": true,
         "hasHandlers": false
       }
     },
     {
-      "name": "preference",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/common/bindings/preferences.xml",
-        "hasContent": false,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "dialog",
+      "name": "search-menulist-abstract",
       "children": [
         {
-          "name": "prefwindow",
-          "children": [
-            {
-              "name": "preftab",
-              "props": {
-                "link": "https://searchfox.org/comm-central/source/mail/components/preferences/aboutPreferences.xml",
-                "hasContent": true,
-                "hasImplementation": true,
-                "hasHandlers": false
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "prefpane",
-      "props": {
-        "link": "https://searchfox.org/comm-central/source/common/bindings/preferences.xml",
-        "hasContent": true,
-        "hasImplementation": true,
-        "hasHandlers": true
-      }
-    },
-    {
-      "name": "radio",
-      "children": [
-        {
-          "name": "panebutton",
+          "name": "searchattribute",
           "props": {
-            "link": "https://searchfox.org/comm-central/source/common/bindings/preferences.xml",
-            "hasContent": true,
-            "hasImplementation": false,
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+            "hasContent": false,
+            "hasImplementation": true,
             "hasHandlers": false
           }
-        }
-      ]
-    },
-    {
-      "name": "autocomplete-rich-result-popup",
-      "children": [
+        },
         {
-          "name": "glodacomplete-rich-result-popup",
+          "name": "searchoperator",
           "props": {
-            "link": "https://searchfox.org/comm-central/source/mailnews/db/gloda/content/glodacomplete.xml",
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
             "hasContent": false,
             "hasImplementation": true,
             "hasHandlers": false
@@ -1416,9 +786,68 @@
       ]
     },
     {
-      "name": "ruleactiontype-menulist",
+      "name": "searchvalue",
       "props": {
-        "link": "https://searchfox.org/comm-central/source/mailnews/base/search/content/searchWidgets.xml",
+        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": true
+      }
+    },
+    {
+      "name": "splitmenu",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": true
+      }
+    },
+    {
+      "name": "menuitem",
+      "children": [
+        {
+          "name": "menuitem-iconic-desc-noaccel",
+          "props": {
+            "link": "https://searchfox.org/comm-central/source/mail/base/content/mailWidgets.xml",
+            "hasContent": true,
+            "hasImplementation": false,
+            "hasHandlers": false
+          }
+        }
+      ]
+    },
+    {
+      "name": "calendar-time-bar",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": false
+      }
+    },
+    {
+      "name": "calendar-event-gripbar",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": true
+      }
+    },
+    {
+      "name": "calendar-event-column",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/calendar-multiday-view.xml",
+        "hasContent": true,
+        "hasImplementation": true,
+        "hasHandlers": true
+      }
+    },
+    {
+      "name": "selection-bar",
+      "props": {
+        "link": "https://searchfox.org/comm-central/source/calendar/base/content/dialogs/calendar-event-dialog-attendees.xml",
         "hasContent": true,
         "hasImplementation": true,
         "hasHandlers": true

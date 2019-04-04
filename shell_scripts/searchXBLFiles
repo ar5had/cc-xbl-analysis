@@ -3,7 +3,7 @@
 echo "Enter the path of comm folder:"
 read commCentralPath
 
-#commCentralPath="/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm"
+commCentralPath="/Users/arshadkhan/Documents/hg_repos/thunderbird/source/comm"
 #echo $commCentralPath
 
 grep -r -l --exclude-dir={mozilla,suite,testing} --include=\*.xml "<bindings" $commCentralPath > ./files/files.txt
